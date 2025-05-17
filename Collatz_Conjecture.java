@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Scanner;
 
+//went to 10 billion
 public class Collatz_Conjecture {
 
 	public static void main(String[] args) {
@@ -13,8 +14,7 @@ public class Collatz_Conjecture {
 		String toTest = input.nextLine();
 
 		if (!toTest.equalsIgnoreCase("Write to file")) {
-//went to 10 billion
-			
+	
 			System.out.println("\nTest:\n=======================================\n");
 			System.out.println("Enter the number to start at. (Must be a natrual number)");
 			long startNum = input.nextLong();
