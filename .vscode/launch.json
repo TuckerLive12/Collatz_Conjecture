@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Collatz_Conjecture",
+            "request": "launch",
+            "mainClass": "Collatz_Conjecture",
+            "projectName": "Collatz_Conjecture_7637419e"
+        },
+        {
             "type": "jdk",
             "request": "launch",
             "name": "Launch Java App"
