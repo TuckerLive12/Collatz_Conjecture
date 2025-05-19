@@ -2,7 +2,22 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+* Contains code for a singly Linked List. Contains two inner classes, SingleLinkNode and
+*  Iterator. Implements the methods addNode, removeNode, printList, and size.
+*
+* Last Modified: May 9, 2025
+* @auther Jack Kucera
+**/
 public class CollatzConjecture {
+
+	/**
+   * This method adds a new node at the beginning of LinkedList with the value inputed. 
+   *  Increases size by one.
+   *
+   * @param data, an integer to put into the new node
+   * @return void
+   */
     public static void collatzConjecture(long start, long end, boolean write, boolean showeachoperation) throws IOException {
 			File file = new File("Collatz_Conjecture/CollatzConjecture.txt");
 			FileWriter fwriter = new FileWriter(file, true);
