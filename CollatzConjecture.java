@@ -63,7 +63,7 @@ public class CollatzConjecture {
    *
    * @param start, A long which indicates what number to start testing the Collatz Conjecture
    * @param end, A long which indicates what number to end testing the Collatz Conjecture. If end is 0, never stops.
-   * @param iterationToPrint, An int which indicates after how many iterations to print the numbering being tested. Does this by modulating the number being tested, if 0, print. Recommended to pick a high power of 2
+   * @param iterationToPrint, An int which indicates after how many iterations to print the numbering being tested. Does this by modulating the number being tested, if 0, print. Recommended to pick a high power of 2, 2^24 is good.
    * @throws IllegalArgumentException, If a paramter is not what is expected
    * @return void
    */
@@ -103,7 +103,7 @@ public class CollatzConjecture {
 			}
 
 			// If the collatzNum is divisable by iterationToPrint, print the collatzNum
-			if (collaztNum % iterationToPrint == 0) System.out.println("Number Tested: " + collatzNum);
+			if ((collatzNum + 1) % iterationToPrint == 0) System.out.println("Number Tested: " + String.format("%,d", collatzNum));
 	
 		}
 
